@@ -27,11 +27,19 @@ while (keeplooping == true); {
 
 const foods = ["pizza", "chocolate", "ice cream", "cheese"];
 for (let i = 0; i < foods.length; i++) {
-    console.log(foods[i]);
+    console.log(foods[i]); //this iterates through each item in the array
 }
 const favFoods = ["Pizza","Butter Chicken","Carbonara","Steak"];
 for (let food of favFoods) {
     console.log(favFoods) //this acc just does the whole array 4 times. A bit silly.
 }
 
+
+foods.forEach(function(food,index) {
+    console.log(index,food)
+})
+
+//basically, for each means it iterates through each item in the array,
+//Then, the anyonymous function, tracks the food/item in each position, and its index, and returns it.
+//in the anyonymous function, the first item always equals the current item in the array, and the second always refers to the index. 
 
