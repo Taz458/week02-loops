@@ -23,3 +23,15 @@ while (keeplooping == true); {
     i++
 }
 */
+
+
+const foods = ["pizza", "chocolate", "ice cream", "cheese"];
+for (let i = 0; i < foods.length; i++) {
+    console.log(foods[i]);
+}
+const favFoods = ["Pizza","Butter Chicken","Carbonara","Steak"];
+for (let food of favFoods) {
+    console.log(favFoods) //this acc just does the whole array 4 times. A bit silly.
+}
+
+
